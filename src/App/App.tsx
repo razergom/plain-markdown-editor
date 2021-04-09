@@ -11,7 +11,7 @@ export const App = () => {
     return (
         <div className={styles.app}>
             <div className={styles.editorWrapper}>
-                <h2>simple markdown editor</h2>
+                <h2>Simple Markdown Editor</h2>
                 <CustomEditor
                     value={editorContent}
                     onChange={setEditorContent}
@@ -22,12 +22,13 @@ export const App = () => {
                             lint: true,
                             mode: 'markdown',
                             lineNumbers: true,
+                            spellcheck: true,
                         }
                     }
                 />
             </div>
             <div className={styles.previewWrapper}>
-                <h2>simple markdown preview</h2>
+                <h2>Simple Markdown Preview</h2>
                 <div className={styles.preview} dangerouslySetInnerHTML={generateMarkdownPreview(editorContent)} />
             </div>
         </div>
