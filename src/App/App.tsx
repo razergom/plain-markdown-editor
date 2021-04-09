@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 
 export const App = () => (
     <div className={styles.editorWrapper}>
-        <div>Epic Markdown Editor</div>
-        <Editor />
+        <h1>Epic Markdown Editor</h1>
+        <Editor content={'qweqeqweqw'} onChangeContent={() => {}} />
     </div>
 )
