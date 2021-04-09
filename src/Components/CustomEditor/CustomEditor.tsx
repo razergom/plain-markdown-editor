@@ -3,7 +3,6 @@ import * as codemirror from 'codemirror';
 import { Editor, EditorChange } from 'codemirror'
 import { Controlled as ControlledEditor } from 'react-codemirror2';
 import 'codemirror/lib/codemirror.css'
-import 'codemirror/theme/material-darker.css'
 import 'codemirror/mode/markdown/markdown'
 import styles from './styles.module.scss'
 
