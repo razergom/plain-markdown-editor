@@ -2,18 +2,16 @@
   margin-top: 20px;
 
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
 
   .editorWrapper {
-    margin-top: 20px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    height: 500px;
+    height: 700px;
+    width: 600px;
 
     .editorCustomStyles {
       border-radius: 20px;
@@ -21,10 +19,24 @@
   }
 
   .previewWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 700px;
+
     .preview {
-      height: 300px;
-      width: 650px;
-      background-color: blue;
+      overflow: auto;
+
+      border-radius: 20px;
+
+      padding: 20px;
+      width: 600px;
+      height: 100%;
+
+      color: black;
+      background-color: white;
     }
   }
 }
