@@ -18,8 +18,8 @@ export const App = () => {
                     editorClassName={styles.editorCustomStyles}
                     options={
                         {
+                            inputStyle: 'contenteditable',
                             lineWrapping: true,
-                            lint: true,
                             mode: 'markdown',
                             lineNumbers: true,
                             spellcheck: true,
@@ -29,7 +29,10 @@ export const App = () => {
             </div>
             <div className={styles.previewWrapper}>
                 <h2>Simple Markdown Preview</h2>
-                <div className={styles.preview} dangerouslySetInnerHTML={generateMarkdownPreview(editorContent)} />
+                <div
+                    className={styles.preview}
+                    dangerouslySetInnerHTML={generateMarkdownPreview(editorContent)}
+                />
             </div>
         </div>
     )
