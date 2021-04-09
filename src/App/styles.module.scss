@@ -1,12 +1,30 @@
-.editorWrapper {
+.app {
   margin-top: 20px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
 
-  div {
+  .editorWrapper {
     margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+
+    .editorCustomStyles {
+      border-radius: 20px;
+    }
+  }
+
+  .previewWrapper {
+    .preview {
+      height: 300px;
+      width: 650px;
+      background-color: blue;
+    }
   }
 }

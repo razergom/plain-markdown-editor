@@ -1,10 +1,28 @@
-import React from 'react'
-import { Editor } from "../Components/Editor";
+import React, { useState } from 'react'
+import { CustomEditor } from '../Components/CustomEditor';
 import styles from './styles.module.scss'
 
-export const App = () => (
-    <div className={styles.editorWrapper}>
-        <h1>Epic Markdown Editor</h1>
-        <Editor content={'qweqeqweqw'} onChangeContent={() => {}} />
-    </div>
-)
+export const App = () => {
+    const [editorContent, setEditorContent] = useState('Epic Markdown Editor Content')
+
+    return (
+        <div className={styles.app}>
+            <div className={styles.editorWrapper}>
+                <h2>Epic Markdown Editor</h2>
+                <CustomEditor
+                    value={editorContent}
+                    onChange={setEditorContent}
+                    editorClassName={styles.editorCustomStyles}
+                    options={
+                        {
+                            lineWrapping: true,
+                            lint: true,
+                            mode: 'markdown',
+                            lineNumbers: true,
+                        }
+                    }
+                />
+            </div>
+        </div>
+    )
+}
