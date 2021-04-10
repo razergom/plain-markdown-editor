@@ -1,9 +1,13 @@
 import React from 'react'
-import * as codemirror from 'codemirror';
+import * as codemirror from 'codemirror'
 import { Editor, EditorChange } from 'codemirror'
-import { Controlled as ControlledEditor } from 'react-codemirror2';
+import { Controlled as ControlledEditor } from 'react-codemirror2'
 import 'codemirror/lib/codemirror.css'
 import 'codemirror/mode/markdown/markdown'
+import 'codemirror/mode/javascript/javascript'
+import 'codemirror/addon/hint/show-hint'
+import 'codemirror/addon/hint/anyword-hint'
+import 'codemirror/addon/hint/show-hint.css'
 import styles from './styles.module.scss'
 
 type CustomEditorProps = {

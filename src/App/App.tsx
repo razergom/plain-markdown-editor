@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import marked from 'marked'
-import { CustomEditor } from '../Components/CustomEditor';
+import { CustomEditor } from '../Components/CustomEditor'
 import styles from './styles.module.scss'
 
 export const App = () => {
@@ -23,6 +23,9 @@ export const App = () => {
                             mode: 'markdown',
                             lineNumbers: true,
                             spellcheck: true,
+                            extraKeys: {
+                                "Shift-Ctrl": 'autocomplete',
+                            },
                         }
                     }
                 />
