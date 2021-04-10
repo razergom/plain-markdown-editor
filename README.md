@@ -16,18 +16,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Libraries used:
 
 * codemirror
+
 * react-codemirror2
+
 * marked (text-to-markdown converter)
 
 ## Done
-
-* Spell checking languages, supported by default in codemirror 
-(checked on Russian and English languages)
-
 * Markdown syntax highlighting
+
+* Spell checking (tested for Russian and English languages)
 
 * Simple markdown previewer
 
-* Simple word autocomplete on Shift+Ctrl hotkey
-
-
+* Word autocomplete (Shift+Ctrl)
