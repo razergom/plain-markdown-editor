@@ -13,15 +13,7 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Libraries used:
-
-* codemirror
-
-* react-codemirror2
-
-* marked (text-to-markdown converter)
-
-## Done
+## What is done
 * Markdown syntax highlighting
 
 * Spell checking (tested for Russian and English languages)
@@ -29,3 +21,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 * Simple markdown previewer
 
 * Word autocomplete (Shift+Ctrl)
+
+## Libraries used:
+
+* codemirror
+
+* react-codemirror2
+
+* marked (text-to-markdown converter)
