@@ -4,15 +4,13 @@ JetBrains Internship test task for Grazie Web Editor Project, written in React +
 
 ## How to run it
 
-In order to start project, run these commands:
+In order to start the project, run these commands:
 
-### `npm install`
+```
+npm install
+npm start
+```
 
-Command will install all needed dependecies.
-
-### `npm start`
-
-Command runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Libraries used:
